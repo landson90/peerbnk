@@ -1,7 +1,7 @@
-import { DetailsPage } from "./pages/Details.page";
+import { DetailsView } from "./view/Details";
 
 function App() {
-  return <DetailsPage />;
+  return <DetailsView />;
 }
 
 export default App;
