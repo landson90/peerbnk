@@ -20,9 +20,9 @@ export function DetailsPage() {
           </section>
         </div>
         <div>
-          <div className="bg-white h-44 w-72 rounded flex flex-col justify-around p-3">
+          <div className="bg-white h-44 w-96 rounded flex flex-col justify-around p-3">
             <header>
-              <h5>Detalhes do(a) devedor(a)</h5>
+              <h5>Detalhes da cobrança</h5>
             </header>
             <section className="flex flex-col gap-1 text-lg leading-6">
               <div className="flex justify-between mb-2">
