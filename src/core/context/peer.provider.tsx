@@ -8,6 +8,8 @@ interface IPeerProvider {
 
 interface PeerContextData {
   qrCodes: IQrCodes[];
+  isActiveDetails: boolean;
+  isActiveCardDetails: (isActive: boolean) => Promise<void>;
 }
 
 export const PeerContext = createContext<PeerContextData>(
@@ -16,6 +18,7 @@ export const PeerContext = createContext<PeerContextData>(
 
 export function PeerProvider({ children }: IPeerProvider) {
   const [qrCodes, setQrCodes] = useState<IQrCodes[]>([]);
+  const [isActiveDetails, setIsActiveDetails] = useState<boolean>(false);
 
   useEffect(() => {
     Peerbnk.findAllCharges().then((response) => {
@@ -25,7 +28,15 @@ export function PeerProvider({ children }: IPeerProvider) {
     });
   }, []);
 
+  async function isActiveCardDetails(isActive: boolean) {
+    setIsActiveDetails(isActive);
+  }
+
   return (
-    <PeerContext.Provider value={{ qrCodes }}>{children}</PeerContext.Provider>
+    <PeerContext.Provider
+      value={{ qrCodes, isActiveDetails, isActiveCardDetails }}
+    >
+      {children}
+    </PeerContext.Provider>
   );
 }
