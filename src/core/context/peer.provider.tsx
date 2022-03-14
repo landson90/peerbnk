@@ -48,7 +48,6 @@ export function PeerProvider({ children }: IPeerProvider) {
 
   async function searchCollection(id: string) {
     Peerbnk.findByChages(id).then((response) => {
-      console.log(response.data);
       if (response.data[0].payer) setCollection(response.data[0]);
     });
   }

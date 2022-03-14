@@ -24,7 +24,10 @@ export function TableBody() {
               {q.createdAt}
             </td>
             <td className="px-6 py-4 text-sm font-medium text-gray-900 whitespace-nowrap">
-              {q.requestAmount}
+              {new Intl.NumberFormat("pt-BR", {
+                style: "currency",
+                currency: "BRL",
+              }).format(q.requestAmount)}
             </td>
             <td className="px-6 py-4 text-sm font-medium text-gray-900 whitespace-nowrap">
               <a
