@@ -2,11 +2,14 @@ import { useContext, useState } from "react";
 import { PeerContext, PeerProvider } from "../../../core/context/peer.provider";
 
 export function TableBody() {
-  const { qrCodes, isActiveCardDetails } = useContext(PeerContext);
+  const { qrCodes, isActiveCardDetails, searchDorDetails } =
+    useContext(PeerContext);
 
-  function handleClickActive() {
+  function handleClickActive(id: string) {
     isActiveCardDetails(true);
+    searchDorDetails(id);
   }
+
   console.log(qrCodes);
   return (
     <tbody className="bg-white divide-y divide-gray-200">
@@ -24,7 +27,7 @@ export function TableBody() {
             </td>
             <td className="px-6 py-4 text-sm font-medium text-gray-900 whitespace-nowrap">
               <a
-                onClick={() => handleClickActive()}
+                onClick={() => handleClickActive(q.qrCodeId)}
                 className="text-green-600 hover:text-green-900 cursor-pointer"
               >
                 Detalhes
