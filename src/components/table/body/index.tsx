@@ -2,12 +2,13 @@ import { useContext, useState } from "react";
 import { PeerContext, PeerProvider } from "../../../core/context/peer.provider";
 
 export function TableBody() {
-  const { qrCodes, isActiveCardDetails, searchDorDetails } =
+  const { qrCodes, isActiveCardDetails, searchDorDetails, searchCollection } =
     useContext(PeerContext);
 
   function handleClickActive(id: string) {
     isActiveCardDetails(true);
     searchDorDetails(id);
+    searchCollection(id);
   }
 
   console.log(qrCodes);
