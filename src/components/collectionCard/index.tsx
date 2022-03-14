@@ -1,8 +1,20 @@
+import format from "date-fns/format";
 import { useContext } from "react";
 import { PeerContext } from "../../core/context/peer.provider";
 
 export function CollectionCard() {
   const { collection } = useContext(PeerContext);
+  function teste(dt: string) {
+    const data = new Date(dt);
+    const formatData = new Intl.DateTimeFormat("pt-BR").format(new Date(data));
+
+    const d = dt.split("T");
+    const a = d[1];
+    const h = a.split(".");
+    console.log(h);
+    const dataHoraExibir = formatData + " às " + h[0];
+    return dataHoraExibir;
+  }
   return (
     <div>
       <div className="bg-white h-40 w-full rounded flex flex-col justify-around p-3">
@@ -22,7 +34,7 @@ export function CollectionCard() {
           </div>
           <div>
             <p className="text-xs text-gray-400">Data de criação da cobrança</p>
-            <p className="text-sm ">{collection.paidAt}</p>
+            <p className="text-sm "> {collection.paidAt}</p>
           </div>
         </section>
       </div>

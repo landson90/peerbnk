@@ -11,7 +11,6 @@ export function TableBody() {
     searchCollection(id);
   }
 
-  console.log(qrCodes);
   return (
     <tbody className="bg-white divide-y divide-gray-200">
       {qrCodes.map((q) => {
@@ -21,7 +20,7 @@ export function TableBody() {
               {q.id}
             </td>
             <td className="px-6 py-4 text-sm font-medium text-gray-900 whitespace-nowrap">
-              {q.createdAt}
+              {new Intl.DateTimeFormat("pt-BR").format(new Date(q.createdAt))}
             </td>
             <td className="px-6 py-4 text-sm font-medium text-gray-900 whitespace-nowrap">
               {new Intl.NumberFormat("pt-BR", {
