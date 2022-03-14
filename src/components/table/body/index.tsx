@@ -1,4 +1,32 @@
+import { useEffect, useState } from "react";
+import Peerbnk from "../../../core/service/peerbnk.service";
+
+interface IQrCodes {
+  id: string;
+  qrCodeId: string;
+  requestAmount: number;
+  paidAmount: string;
+  type: string;
+  createdAt: Date;
+  createdBy: string;
+  payer: {
+    name: string;
+    taxIdNumber: number;
+    documentType: string;
+    city: string;
+    codIspb: number;
+  };
+}
+
 export function TableBody() {
+  const [qrCodes, setQrCodes] = useState<IQrCodes[]>([]);
+  useEffect(() => {
+    Peerbnk.findAllCharges().then((response) => {
+      setQrCodes(response.data);
+      console.log(qrCodes);
+    });
+  }, []);
+
   return (
     <tbody className="bg-white divide-y divide-gray-200">
       <tr>
