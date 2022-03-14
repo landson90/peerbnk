@@ -1,8 +1,12 @@
-import { DetailsView } from "./view/Details";
+import { PeerProvider } from "./core/context/peer.provider";
 import { HomeView } from "./view/Home";
 
 function App() {
-  return <HomeView />;
+  return (
+    <PeerProvider>
+      <HomeView />;
+    </PeerProvider>
+  );
 }
 
 export default App;
