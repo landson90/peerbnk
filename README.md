@@ -26,7 +26,7 @@ Além disso é bo ter um editor para trabalhar com codigo como [VSCode](https://
 
 #### Rodando o Front End
 
----
+
 
 bash
 
@@ -34,7 +34,7 @@ bash
 
 #### Clone do repositorio
 
----
+
 
 $ git clone <https://github.com/landson90/peerbnk>
 
@@ -44,7 +44,7 @@ $ git clone <https://github.com/landson90/peerbnk>
 
 #### Podemos dar um desses comandos abaixo, para instalar as dependencias
 
----
+
 
 $ yarn install  
 $ npm install
@@ -53,7 +53,7 @@ $ npm install
 
 #### Execute a aplicação em modo de desenvolvimento, Podemos dar um desses comandos abaixo
 
----
+
 
 $ yarn start
 $ npm start
