@@ -3,9 +3,9 @@
 <P align="center"> PeerBnk </p>
 
 <p align="center">
-    <a href="#sobre"> Sobre </a>
-    <a href="#tecnologias"> Tecnologias </a>
-    <a href="#pre-requisitos"> Pré Requisitos </a>
+    <a href="#sobre"> Sobre - </a>
+    <a href="#tecnologias"> Tecnologias - </a>
+    <a href="#pre-requisitos"> Pré Requisitos - </a>
     <a href="#autor"> Autor </a>
 </p>
 
