@@ -37,25 +37,19 @@ $ git clone <https://github.com/landson90/peerbnk>
 
 $ cd projeto
 
-#Instale as dependencias
-
-## Podemos dar um desses comandos abaixo
+# Podemos dar um desses comandos abaixo, para instalar as dependencias
 
 $ yarn install  
 $ npm install
 
-# Execute a aplicação em modo de desenvolvimento
-
-## Podemos dar um desses comandos abaixo
+# Execute a aplicação em modo de desenvolvimento, Podemos dar um desses comandos abaixo
 
 $ yarn start
 $ npm start
 
 ### O servidor iniciará na porta: 3000 - acesse <http://localhost:3000>
 
-# buildando a aplicação
-
-## Podemos dar um desses comandos abaixo
+# buildando a aplicação, Podemos dar um desses comandos abaixo
 
 $ yarn run build
 $ npm run build
