@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<P align="center"> PeerBnk </p>
 
-## Available Scripts
+<p align="center">
+    <a href="#sobre"> Sobre </a>
+    <a href="#roadmap"> Roadmap </a>
+    <a href="#tecnologias"> Tecnologias </a>
+    <a href="#pre-requisitos"> Pré Requisitos </a>
+    <a href="#autor"> Autor </a>
+</p>
 
-In the project directory, you can run:
+<br>
 
-### `npm start`
+<h4 align="center"> Projeto Finalizado </h4>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Feature
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-[x] Criar Listagem -[x] Detalhes de cada item da lista
 
-### `npm test`
+### Pré-requisitos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Antes de começar, você vai precisar ter instalado em sua maquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
+Além disso é bo ter um editor para trabalhar com codigo como [VSCode](https://code.visualstudio.com/)
 
-### `npm run build`
+### Rodando o Front End
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# clone do reposit[orio]
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+$ git clone <https://github.com/landson90/peerbnk>
 
-### `npm run eject`
+# Acesse a pasta do projeto no terminal/cmd
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+$ cd projeto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#Instale as dependencias
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Podemos dar um desses comandos abaixo
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+$ yarn install  
+$ npm install
 
-## Learn More
+# Execute a aplicação em modo de desenvolvimento
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Podemos dar um desses comandos abaixo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+$ yarn start
+$ npm start
+
+# O servidor iniciará na porta: 3000 - acesse <http://localhost:3000>
+
+# buildando a aplicação
+
+## Podemos dar um desses comandos abaixo
+
+$ yarn run build
+$ npm run build
