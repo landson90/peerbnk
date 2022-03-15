@@ -16,8 +16,8 @@
 
 # Feature
 
-x Criar Listagem
-Detalhes de cada item da lista
+- [x] Criar Listagem
+- Detalhes de cada item da lista
 
 ## Pré-requisitos
 
