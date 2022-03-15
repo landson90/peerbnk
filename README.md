@@ -16,7 +16,8 @@
 
 ### Feature
 
--[x] Criar Listagem -[x] Detalhes de cada item da lista
+[x] Criar Listagem
+[x] Detalhes de cada item da lista
 
 ### Pré-requisitos
 
@@ -28,7 +29,7 @@ Além disso é bo ter um editor para trabalhar com codigo como [VSCode](https://
 
 bash
 
-# clone do reposit[orio]
+# Clone do repositorio
 
 $ git clone <https://github.com/landson90/peerbnk>
 
@@ -50,7 +51,7 @@ $ npm install
 $ yarn start
 $ npm start
 
-# O servidor iniciará na porta: 3000 - acesse <http://localhost:3000>
+### O servidor iniciará na porta: 3000 - acesse <http://localhost:3000>
 
 # buildando a aplicação
 
