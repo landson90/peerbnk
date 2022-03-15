@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { PeerContext, PeerProvider } from "../../../core/context/peer.provider";
 
 export function TableBody() {
