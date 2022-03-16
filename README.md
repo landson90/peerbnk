@@ -67,6 +67,7 @@ $ npm start
 ---
 
 $ yarn run build
+
 $ npm run build
 
 # Rodando o dockerfile do projeto 
@@ -76,4 +77,5 @@ Pelo TERMINAL vamos acessar o projeto
 ### Lista de comandos para instalar e configura o projeto usando o docker
 
 $ docker build . -t docker_react
+
 $ docker container run -d --name peerbnk -p 3002:3000 docker-react
